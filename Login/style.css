@@ -1,0 +1,479 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image:url('/Login/images/background2.jpg');
+  background-size: cover;
+  position: relative;
+  
+}
+
+
+
+/* documentation of team Ex : name , Postion in Project , and btn view our work */
+
+section .decomentation{
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  width: 400px;
+  height: 400px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .decomentation p{
+  position: absolute;
+  bottom: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  left: 20px;
+}
+/* ..... */
+section .decomentation .content ul li {
+  list-style: none;
+}
+section .decomentation p span{
+  color: #bb310f;
+}
+section .decomentation button{
+  position: absolute;
+  bottom: 10px;
+  background-color: blue;
+  /* fonts => text  */
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  width: 150px;
+  height: 35px;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+section .decomentation button:hover{
+  width: 170px;
+  height: 45px;    
+  font-size: 1.3rem;
+  opacity: 1;
+}
+section .decomentation.none{
+  display: none;
+}
+
+section .decomentation .content{
+
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+}
+
+
+
+
+
+
+
+/* class in all icons  */
+.fa-brands{
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.fa-brands:hover{
+  font-size: 1.5rem;
+  /* 1.5  */
+    transform: rotate(360deg);
+}
+/* html class ="content" ul li span  */
+.content ul li span {
+  color: #1bbb0f;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+section .decomentation .content h1{
+  position: absolute;
+  top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #1bbb0f;
+
+
+}
+.fa-facebook{
+  color: blue;
+  margin-right: 80px;
+}
+
+
+.fa-whatsapp{
+  color: green;
+  margin-right: 40px;
+}
+.fa-instagram {
+  color: rgb(155, 25, 88);
+}
+section header {
+   position: fixed;
+   top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgb(14, 145, 143);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+}
+
+section header img{
+  font-style: 1.5rem;
+  color: #fff;
+  user-select: none;
+  width: 100px;
+  border-radius:70%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+section header .navigation{
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+@media (min-width: 800px) {
+  section header .navigation{
+    margin-left: 200px;
+  }
+  section header .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+  }
+  }
+  @media (max-width: 800px) {
+    section header .navigation{
+      margin-left: 150px;
+    }
+    section header .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    }
+    }
+section header .navigation a{
+  position: relative;
+  font-style: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+
+
+}
+
+section header div.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0 ;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .3s;
+  
+
+
+
+}
+
+
+section header div.navigation a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+section header .btnLogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 40px;
+  text-align: center;
+  transition: 0.5s;
+
+
+
+
+
+}
+
+section header .btnLogin-popup:hover{
+  background-color: #fff;
+  color: #162938;
+
+}
+
+/* login form styling  */
+
+section .wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparenre;
+  border: 3px solid rgba(255, 255, 255,  .5);
+  border-radius: 20px ;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(0, 0, 0,.5);
+  display: flex;
+  justify-content: center;
+  /* -----------   .............   */
+  align-items: center;
+  overflow: hidden;
+  /* btnpop Login =====>js */
+  transform: scale(0);
+
+  transition:transform .5s ease height .2s ease ;
+
+
+}
+.wrapper.active-popup {
+  transform: scale(1);
+}
+section .wrapper.active {
+   height: 520px;
+
+
+   
+}
+section .wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+
+
+}
+.wrapper .form-box.login {
+  /* display: none; */
+  transition: transform .18s ease;
+  transform: translateX(0);
+
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .form-box.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form-box.register{
+
+  transition: transform .18s ease;
+  transform: translateX(0);
+
+}
+section .wrapper .form-box h2{
+  font-size: 2rem;
+  color: #162938;
+  text-align: center;
+
+}
+
+.wrapper .icons-close {
+position: absolute;
+top: 0;
+right: 0;
+width: 45px;
+height: 45px;
+background: #162938;
+font-size: 2rem;
+color: #fff;
+display:flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius: 20px;
+cursor: pointer;
+z-index: 1;
+
+
+}
+
+section form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+
+}
+section form .input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+ 
+section form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #162938;
+  font-weight: 600;
+  
+
+
+}
+
+section form .input-box input:focus~label,
+section form .input-box input:valid~label {
+  top: -10px;
+}
+ .input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-style: 1.2rem;
+  color: #162938;
+line-height: 57px;
+
+
+}
+.remember-forget {
+  font-size: 0.9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -10px 0 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.remember-forget label {
+  accent-color: #162938;
+  margin-right: 3px;
+}
+
+.remember-forget a{
+  color: #162938;
+  text-decoration: none;
+  transition: 0.7s;
+  
+/* kjfuhrfu */
+}
+.remember-forget a:hover{
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: blue;
+}
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+
+
+
+
+}
+
+.Login-register{
+  font-size: 0.9rem;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+
+}
+
+.Login-register p a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.6s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+
+}
+
+.Login-register p a:hover {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: blue;
+
+}
+
+
+/* close page and open website  */
+section.close{
+  display: none;
+}
+
+#message {
+  color: rgb(244, 8, 8);
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+
+.border {
+  border: 5px solid #bb0f0f;
+}
